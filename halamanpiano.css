@@ -1,0 +1,65 @@
+.kotak{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.bground{
+    background-color: #ffb876 ;
+}
+
+.animasi {
+    transition: all 0.1s;
+    -webkit-transition:all 0.1s ;
+}
+
+.tombol-aktif {
+    padding: 0px 15px;
+    margin-top: 50px;
+    border-radius: 30px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.biru {
+    background-color: #ff6f6f;
+    border-bottom: 5px solid #640300;
+    text-shadow: 0px -2px #3a0e0e;
+}
+
+.tombol-aktif:active {
+    transform: translate(100px,52px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+.piano{
+    display: flex;
+}
+.dshadow{
+    box-shadow: 10px 10px 20px rgb(71, 0, 0);
+}
+.key{
+    height: calc(var(--width) * 4);
+    width: var(--width);
+}
+.white{
+    --width: 100px;
+    border: 1px solid #ffb876;
+    background-color: white;
+}
+.white.active{
+    background-color: rgb(241, 241, 241);
+}
+.black{
+    --width: 60px; height: 240px;
+    margin-left: calc(var(--width) / -2); margin-right: calc(var(--width) / -2);
+    z-index: 2;
+    background-color: black;
+}
+.black.active{
+    background-color: rgb(14, 14, 14);
+}
